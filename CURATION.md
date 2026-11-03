@@ -26,6 +26,15 @@ All four must hold:
 3. Verifiable. Source repo, license, and install command can be checked. Star count is noted but proves nothing.
 4. Distinct. It does not duplicate a Top 20 skill already in the list. If two skills do the same job, keep the better maintained one and archive the other.
 
+## How we rank: outcomes, not checklists
+
+Textbook criteria (clean README, installs fine, maintained) only get a skill through the door. The ranking itself is outcome-based: what does this skill actually do for the person using it?
+
+- Engineering: does it help ship more, ship better, debug faster, waste less time and fewer tokens? Evidence that counts: benchmarks, head-to-head tests, real team adoption, documented before-and-after.
+- Finance: does it help a retail investor make better decisions and better risk-adjusted returns? Does it give a trader a real edge? Evidence that counts: backtested or paper-traded records, disclosed methodology, real risk controls. Stars and marketing copy count for nothing.
+
+When outcome evidence is thin, we say so plainly and rank accordingly. A polished skill with no proof of outcomes sits below an ugly one with proof. No skill is ranked on promises.
+
 ## How a skill gets dropped
 
 - Unmaintained for 90+ days, broken install, or replaced by a better skill.
