@@ -34,6 +34,12 @@ All four must hold:
 
 When dropped: move it to archive/ARCHIVED.md with date, reason, and what replaced it. Never delete the record.
 
+## The archive rule
+
+Every skill we evaluate gets an entry in archive/ARCHIVED.md, whether it makes the Top 20 or not. In the list, dropped from the list, watchlist, or rejected: all of it, with a date and a reason. Anyone browsing the archive sees everything we looked at and why we decided what we did.
+
+The only things that skip the archive are trash: dead repos with no README, broken installs that cannot be fixed, spam, or duplicates with nothing new. Those are not worth the bytes.
+
 ## How we write
 
 - Write like a person, not an assistant. Short sentences. Plain words.
@@ -46,5 +52,5 @@ When dropped: move it to archive/ARCHIVED.md with date, reason, and what replace
 2. Check the watchlist and new contenders from the past week: GitHub trending, Reddit r/ClaudeAI and r/programming, Dev.to, Hacker News.
 3. Test-install any candidate before adding. Do not add untested skills.
 4. Swap at most 3 per week, usually 0 to 1. Stability matters.
-5. Update README.md (date, table, watchlist), CHANGELOG.md (what changed and why), archive/ARCHIVED.md (dropped skills).
+5. Update README.md (date, table, watchlist), CHANGELOG.md (what changed and why), archive/ARCHIVED.md (dropped skills AND every candidate evaluated this week with its verdict: in, watchlist, or rejected).
 6. Commit with a plain human message. Example: "Weekly curation Oct 31: swapped X for Y".
