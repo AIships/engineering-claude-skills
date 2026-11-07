@@ -15,6 +15,7 @@
   .skill .num { color: #57606a; font-weight: 400; margin-right: 0.4em; }
   .skill p { margin: 0.2em 0; }
   .skill .use { color: #57606a; font-size: 0.95em; }
+  .note { color: #57606a; font-size: 0.95em; }
   a { color: #0969da; text-decoration: none; }
   a:hover { text-decoration: underline; }
   ul { padding-left: 1.4em; }
@@ -23,7 +24,7 @@
   @media (prefers-color-scheme: dark) {
     body { background: #0d1117; color: #e6edf3; }
     h2 { border-color: #30363d; }
-    .meta, .skill .use, .skill .num, footer { color: #8b949e; }
+    .meta, .skill .use, .skill .num, .note, footer { color: #8b949e; }
     a { color: #58a6ff; }
     footer { border-color: #30363d; }
   }
@@ -33,17 +34,17 @@
 
 <h1>Top 20 Claude skills for software engineering</h1>
 <p class="meta">A weekly curated list. Software engineering only, no fluff.<br>
-Last updated Oct 28, 2026. Next curation Saturday Oct 31, around 9am PT.<br>
+Last updated Nov 7, 2026 (v2, no swaps). Next curation Saturday Nov 14, around 9am PT.<br>
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.</p>
 
 <h2>How to use this list</h2>
 <ul>
-  <li>Start with one workflow framework from 1-5, not all five.</li>
-  <li>Add the official Anthropic skills you actually need from 8-12.</li>
+  <li>Start with one workflow framework from 1-6, not all six.</li>
+  <li>Add the official Anthropic skills you actually need from 7-12.</li>
   <li>Add one skill per real pain point after that: UI, understanding code, context, tokens.</li>
   <li>Install only what you will use. Every enabled skill costs context.</li>
 </ul>
-<p>Install: <code>/plugin marketplace add anthropics/skills</code>, or copy a skill folder into <code>~/.claude/skills/</code>. Check the source repo first, commands change. This is an index, not a copy. Each entry links to its source. Star counts are from Oct 27-28 and move daily.</p>
+<p>Install: <code>/plugin marketplace add anthropics/skills</code>, or copy a skill folder into <code>~/.claude/skills/</code>. Check the source repo first, commands change. This is an index, not a copy. Each entry links to its source. Star counts are from Oct 27-31 and move daily. Treat them as a popularity signal, not proof of quality.</p>
 
 <h2>Workflow and methodology</h2>
 
@@ -59,40 +60,38 @@ Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 <p>Production-grade spec, build, test, ship workflows.</p>
 <p class="use">Use when: you want a shipping workflow, not just a coding helper.</p></div>
 
-<div class="skill"><p><span class="num">4</span><span class="name"><a href="https://github.com/gsd-build/get-shit-done">GSD - Get Shit Done</a></span></p>
-<p>Spec-driven work with tight context.</p>
-<p class="use">Use when: you want a spec before code and context kept small.</p></div>
+<div class="skill"><p><span class="num">4</span><span class="name"><a href="https://github.com/garrytan/gstack">gstack</a></span> (about 138k stars)</p>
+<p>Team-in-a-box process: slash-command roles for design, eng management, review, QA, security, and release.</p>
+<p class="use">Use when: you want a full engineering-team process around your agent, not just a coding helper.</p></div>
 
 <div class="skill"><p><span class="num">5</span><span class="name"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD-METHOD</a></span></p>
 <p>Agile AI-driven development method.</p>
 <p class="use">Use when: you want an agile, role-based method for bigger builds.</p></div>
 
-<h2>Thinking and discipline</h2>
-
-<div class="skill"><p><span class="num">6</span><span class="name"><a href="https://github.com/Anthropic-OpenSource/andrej-karpathy-skills">Karpathy Skills</a></span></p>
-<p>Think before coding, simplicity first, small surgical changes, goal-driven work. A bug fix means writing a reproducing test first.</p>
-<p class="use">Use when: you keep getting 1000-line fixes for 100-line problems. Check the source before installing, these rules float around in several mirrors.</p></div>
-
-<div class="skill"><p><span class="num">7</span><span class="name"><a href="https://github.com/OthmanAdi/planning-with-files">Planning with Files</a></span></p>
+<div class="skill"><p><span class="num">6</span><span class="name"><a href="https://github.com/OthmanAdi/planning-with-files">Planning with Files</a></span></p>
 <p>Breaks tasks into steps and tracks progress in files.</p>
 <p class="use">Use when: a coding task runs longer than a few minutes and Claude loses track.</p></div>
 
 <h2>Official Anthropic, software engineering only</h2>
-<p>From <a href="https://github.com/anthropics/skills">anthropics/skills</a> (about 184k stars). Only the engineering ones made the list.</p>
+<p>From <a href="https://github.com/anthropics/skills">anthropics/skills</a> (about 184k stars, 19 skill folders). Only the engineering ones made the list. Document, brand, art, and comms skills are in archive.</p>
 
-<div class="skill"><p><span class="num">8</span><span class="name">skill-creator</span></p>
+<div class="skill"><p><span class="num">7</span><span class="name">skill-creator</span></p>
 <p>A skill that writes skills, following Anthropic's own authoring practice.</p>
 <p class="use">Use when: you catch yourself explaining the same procedure twice.</p></div>
 
-<div class="skill"><p><span class="num">9</span><span class="name">mcp-builder</span></p>
+<div class="skill"><p><span class="num">8</span><span class="name">mcp-builder</span></p>
 <p>Guide for building good MCP servers.</p>
 <p class="use">Use when: you need Claude to reach an API, database, or outside service.</p></div>
+
+<div class="skill"><p><span class="num">9</span><span class="name">claude-api</span></p>
+<p>Reference for the Claude API and SDKs: model ids, pricing, params, streaming, tool use, caching.</p>
+<p class="use">Use when: you build with the Claude API and want current facts, not the model's memory.</p></div>
 
 <div class="skill"><p><span class="num">10</span><span class="name">frontend-design</span></p>
 <p>Distinctive, production-grade UI direction.</p>
 <p class="use">Use when: you build web interfaces and want to avoid generic-looking pages.</p></div>
 
-<div class="skill"><p><span class="num">11</span><span class="name">artifacts-builder</span></p>
+<div class="skill"><p><span class="num">11</span><span class="name">web-artifacts-builder</span></p>
 <p>Build complex HTML artifacts with React, Tailwind, shadcn.</p>
 <p class="use">Use when: you build interactive artifacts or web apps in Claude.</p></div>
 
@@ -106,15 +105,17 @@ Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 <p>Design intelligence: styles, palettes, UX rules.</p>
 <p class="use">Use when: your UI looks AI-made and you want a real design system.</p></div>
 
-<div class="skill"><p><span class="num">14</span><span class="name"><a href="https://github.com/Leonxlnx/taste-skill">Taste Skill</a></span></p>
-<p>Strict anti-slop rules for landing pages.</p>
-<p class="use">Use when: you want taste and restraint, not more components. Note: blind tests in Oct 2026 were mixed on this one, judge it on your own brief.</p></div>
+<div class="skill"><p><span class="num">14</span><span class="name"><a href="https://github.com/pbakaus/impeccable">Impeccable</a></span> (about 98k stars)</p>
+<p>Design vocabulary for agents: polish, critique, audit commands plus 62 deterministic anti-slop detector rules.</p>
+<p class="use">Use when: your agent-built UI looks generic and you want concrete, checkable design feedback.</p></div>
+
+<p class="note">Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on one test, and a Subframe test the same month found impeccable the only one of four design skills that changed the look. Impeccable uses deterministic detectors instead of LLM judgment. Some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.</p>
 
 <h2>Understanding, docs, context</h2>
 
-<div class="skill"><p><span class="num">15</span><span class="name">Understand-Anything</span></p>
+<div class="skill"><p><span class="num">15</span><span class="name"><a href="https://github.com/Egonex-AI/Understand-Anything">Understand-Anything</a></span> (about 91k stars)</p>
 <p>Turns a codebase into an interactive knowledge graph you can explore and ask about.</p>
-<p class="use">Use when: you are onboarding to an unfamiliar codebase. Search the name on GitHub, it has several mirrors.</p></div>
+<p class="use">Use when: you are onboarding to an unfamiliar codebase.</p></div>
 
 <div class="skill"><p><span class="num">16</span><span class="name"><a href="https://github.com/upstash/context7">Context7</a></span></p>
 <p>Keeps current library docs in front of the model.</p>
@@ -122,7 +123,7 @@ Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
 <div class="skill"><p><span class="num">17</span><span class="name"><a href="https://github.com/thedotmack/claude-mem">Claude-Mem</a></span></p>
 <p>Persistent memory across sessions.</p>
-<p class="use">Use when: Claude forgets your project between sessions.</p></div>
+<p class="use">Use when: Claude forgets your project between sessions. Note: browser installs Oct 25-Nov 2 uploaded 30 days of prompts without asking; fixed in v15.8.3 (Nov 2) with a consent panel. Check the consent screen on install.</p></div>
 
 <div class="skill"><p><span class="num">18</span><span class="name"><a href="https://github.com/cathrynlavery/diagram-design">Diagram Design</a></span> (about 53k stars)</p>
 <p>Architecture, flow, org, and timeline diagrams, 44 types, exports to HTML, SVG, PNG.</p>
@@ -134,21 +135,29 @@ Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 <p>Cuts output tokens hard while keeping technical accuracy.</p>
 <p class="use">Use when: you are hitting usage limits and want shorter output.</p></div>
 
-<div class="skill"><p><span class="num">20</span><span class="name">ECC</span></p>
+<div class="skill"><p><span class="num">20</span><span class="name"><a href="https://github.com/affaan-m/ecc">ECC</a></span></p>
 <p>Agent harness tuning: skills, memory, security, research-first workflow.</p>
-<p class="use">Use when: you want one harness setup across Claude Code, Codex, Cursor, and similar tools. Search "affaan-m/ecc" on GitHub, it has mirrors.</p></div>
+<p class="use">Use when: you want one harness setup across Claude Code, Codex, Cursor, and similar tools.</p></div>
+
+<p class="note">Both names have many mirrors. Use the linked repos. Do not install a fork without reading it.</p>
 
 <h2>Watchlist for next Saturday</h2>
+<p>Did not make v2. First in line if a Top 20 slot opens:</p>
 <ul>
-  <li>gstack: full team-in-a-box process</li>
-  <li>Hallmark / Impeccable: anti-slop design, alternatives to 13 and 14</li>
-  <li>GitNexus: client-side knowledge graph with built-in RAG, alternative to 15</li>
+  <li>Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13</li>
+  <li>react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet</li>
+  <li>GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15</li>
   <li>Context Engineering / Context Mode: token and context optimization, alternative to 19</li>
-  <li>claude-api (Anthropic): reference for building with the Claude API and SDKs</li>
+  <li>open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core</li>
+  <li>Karpathy Skills (multica-ai/andrej-karpathy-skills): single CLAUDE.md, four rules from Karpathy's post, about 229k stars. Duplicates 1, no outcome evidence beyond stars</li>
+  <li>Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet</li>
+  <li>MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check</li>
+  <li>Pristine: UI critique skill, no verified repo yet</li>
+  <li>playwright-cli skill: browser QA through an npm package, overlaps 12</li>
 </ul>
 
 <h2>Left out on purpose</h2>
-<p>algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx. Real Anthropic skills, just not software engineering. Full history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/archive/ARCHIVED.md">archive</a>.</p>
+<p>algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx, discernment-nudge, academy-guide, doc-coauthoring. Real Anthropic skills, just not software engineering. Full history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/archive/ARCHIVED.md">archive</a>.</p>
 
 <footer>
 <p>Curated weekly. Rules in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/CURATION.md">CURATION.md</a>, history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/CHANGELOG.md">CHANGELOG.md</a>, source at <a href="https://github.com/AIships/engineering-claude-skills">github.com/AIships/engineering-claude-skills</a>.</p>
