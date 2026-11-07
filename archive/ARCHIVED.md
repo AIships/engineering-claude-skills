@@ -8,6 +8,17 @@ The only things that skip the archive are trash: dead repos with no README, brok
 
 | Date evaluated | Skill | Verdict | Reason |
 |---|---|---|---|
+| 2026-11-07 | Karpathy Skills (multica-ai/andrej-karpathy-skills) | Watchlist | Single CLAUDE.md, four rules from Karpathy's post. About 229k stars, but duplicates Superpowers (#1) and has no outcome evidence beyond stars. Different repo from the dead one dropped Oct 31 |
+| 2026-11-07 | react-best-practices (vercel-labs/agent-skills) | Watchlist | Official Vercel source, 33,682 stars, last commit Oct 27. 40+ React and Next.js performance rules. Distinct from #10 (performance, not design). No benchmarks or before-after yet, and no weak slot to take |
+| 2026-11-07 | Unslop (heydamir/unslop) | Watchlist | Staged UI review, 11,202 stars on day one. Overlaps #13 and #14, no comparative evaluation yet |
+| 2026-11-07 | MCode Stack (MiniMax-AI/mcode-stack) | Watchlist | Recheck: 545 stars (was 476), active Nov 4-6, new req-tpm stack and four agent-ownership skills. Still no published evals. Stays on watchlist |
+| 2026-11-07 | T3 Code (pingdotgg/t3code) | Rejected | Not a skill. A desktop, web, and mobile control surface for agents. About 50k stars and v0.1.7, but out of scope for a skills list |
+| 2026-11-07 | TradingAgents (TauricResearch/TradingAgents) | Rejected | Out of scope: multi-agent LLM trading framework, not software engineering |
+| 2026-11-07 | tuicr (agavra/tuicr) | Rejected | Code-review TUI with a skill. Overlaps #1 verification and #4 review roles. Tool first, skill second |
+| 2026-11-07 | discernment-nudge (anthropics/skills) | Rejected | Out of scope: appends follow-up questions to substantive answers. General assistant behavior, not software engineering. Missed in the Oct 27 archive, caught in the Nov 7 recheck |
+| 2026-11-07 | academy-guide (anthropics/skills) | Rejected | Out of scope: points to Claude Academy courses. Onboarding, not engineering. Missed in the Oct 27 archive, caught in the Nov 7 recheck |
+| 2026-11-07 | doc-coauthoring (anthropics/skills) | Rejected | Out of scope: doc and proposal writing workflow. Document production, same bucket as docx and pdf. Missed in the Oct 27 archive, caught in the Nov 7 recheck |
+| 2026-11-07 | driving-seat (Tanmay-Ts/driving-seat) | Rejected | Was watchlist Oct 27. Repo now returns 404, no longer reachable. Dropped from the watchlist |
 | 2026-11-02 | day-trader-skill (Jakeschincariol/day-trader-skill) | Rejected | Out of scope: day trading, not software engineering. Legit repo (4.6k stars, MIT, paper-first), just not this list |
 | 2026-10-31 | MCode Stack (MiniMax-AI/mcode-stack) | Watchlist | Harness engineering from the MiniMax Code team. 3 days old, 476 stars, no published evals. Standouts: independent-review, long-command-check |
 | 2026-10-27 | Hallmark (Nutlope/hallmark) | Watchlist | Anti-slop design with 50 themes and a browser lint, alternative to 13 |
