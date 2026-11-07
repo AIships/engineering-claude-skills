@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-07 - v2, no swaps
+
+- No swaps. All 20 sources rechecked: every repo had a commit in the last 7 days, no breaking changes. Superpowers shipped v7.0.2 (Nov 3), Caveman 4.1.0 (Nov 7), Planning with Files v3.28.1 (Nov 7). anthropics/skills still has the same 19 folders, no new engineering skill; its Nov 6 commit only moved the Office skills to Apache 2.0.
+- Accuracy fixes: #11 renamed to web-artifacts-builder, the exact folder name in anthropics/skills. #15 pinned to Egonex-AI/Understand-Anything (about 91k stars). #20 pinned to affaan-m/ecc. The "check the owner" warning is gone now that both are linked.
+- Claude-Mem stays at #17 with a new caveat in the README: browser installs Oct 25-Nov 2 uploaded 30 days of prompts without asking. Fixed in v15.8.3 on Nov 2 with a consent panel. Installs after the fix ask first. The entry stays because the fix is shipped and there is no better memory skill on the list.
+- Watchlist: driving-seat dropped, its repo now returns 404. Added vercel-labs/agent-skills (react-best-practices), Karpathy Skills (multica-ai), and Unslop. MCode Stack rechecked at 545 stars, still no published evals.
+- Evidence note: a Subframe test in Oct 2026 found impeccable the only one of four design skills that changed the look. That backs the Oct 31 swap of Taste for Impeccable.
+- Candidates evaluated this week are all in archive/ARCHIVED.md: Karpathy Skills, react-best-practices, Unslop, T3 Code, TradingAgents, tuicr, discernment-nudge, academy-guide, doc-coauthoring, driving-seat, MCode Stack recheck.
+- The Pages site (docs/index.html) was rebuilt to match the README. It was still on v1, listing GSD, the dead Karpathy repo, and Taste Skill. It now matches v2.
+
 ## 2026-10-31 - v2, three swaps
 
 - Dropped GSD (slot 4): gsd-build/get-shit-done was archived by its maintainer; last commit May 2026, so it fails the 90-day rule. Replaced by garrytan/gstack (was watchlist #1): team-in-a-box process with slash-command roles for design, review, QA, security, and release. Install path verified by cloning the repo.
