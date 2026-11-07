@@ -2,8 +2,8 @@
 
 A weekly curated list. Software engineering only, no fluff.
 
-Last updated: 2026-10-31 (v2)
-Next curation: Saturday 2026-11-07, around 9am PT
+Last updated: 2026-11-07 (v2, no swaps)
+Next curation: Saturday 2026-11-14, around 9am PT
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
 Browse it as a simple site: https://aiships.github.io/engineering-claude-skills/
@@ -55,7 +55,7 @@ Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k st
 | 8 | mcp-builder | Guide for building good MCP servers | You need Claude to reach an API, database, or outside service |
 | 9 | claude-api | Reference for the Claude API and SDKs: model ids, pricing, params, streaming, tool use, caching | You build with the Claude API and want current facts, not the model's memory |
 | 10 | frontend-design | Distinctive, production-grade UI direction | You build web interfaces and want to avoid generic-looking pages |
-| 11 | artifacts-builder | Build complex HTML artifacts with React, Tailwind, shadcn | You build interactive artifacts or web apps in Claude |
+| 11 | web-artifacts-builder | Build complex HTML artifacts with React, Tailwind, shadcn | You build interactive artifacts or web apps in Claude |
 | 12 | webapp-testing | Test local web apps with Playwright for UI checks and debugging | You need browser-driven QA before shipping a web app |
 
 ### Frontend and UI
@@ -65,15 +65,15 @@ Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k st
 | 13 | UI-UX Pro Max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Design intelligence: styles, palettes, UX rules | Your UI looks AI-made and you want a real design system |
 | 14 | Impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable), about 98k stars, checked Oct 31 on GitHub | Design vocabulary for agents: polish, critique, audit commands plus 62 deterministic anti-slop detector rules | Your agent-built UI looks generic and you want concrete, checkable design feedback |
 
-Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on one test, and impeccable is this week's fastest riser, with deterministic detectors instead of LLM judgment. Some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.
+Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on one test, and a Subframe test the same month found impeccable the only one of four design skills that changed the look. Impeccable uses deterministic detectors instead of LLM judgment. Some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.
 
 ### Understanding, docs, context
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
-| 15 | Understand-Anything | Search "Understand-Anything" on GitHub, see note below | Turns a codebase into an interactive knowledge graph you can explore and ask about | You are onboarding to an unfamiliar codebase |
+| 15 | Understand-Anything | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything), about 91k stars, checked Nov 7 on GitHub | Turns a codebase into an interactive knowledge graph you can explore and ask about | You are onboarding to an unfamiliar codebase |
 | 16 | Context7 | [upstash/context7](https://github.com/upstash/context7) | Keeps current library docs in front of the model | Claude keeps using outdated library APIs |
-| 17 | Claude-Mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Persistent memory across sessions | Claude forgets your project between sessions |
+| 17 | Claude-Mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Persistent memory across sessions. Note: browser installs Oct 25-Nov 2 uploaded 30 days of prompts without asking; fixed in v15.8.3 (Nov 2) with a consent panel. Check the consent screen on install | Claude forgets your project between sessions |
 | 18 | Diagram Design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design), about 53k stars | Architecture, flow, org, and timeline diagrams, 44 types, exports to HTML, SVG, PNG | You need clean architecture diagrams from a codebase or a brief |
 
 ### Efficiency and harness
@@ -81,26 +81,28 @@ Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
 | 19 | Caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Cuts output tokens hard while keeping technical accuracy | You are hitting usage limits and want shorter output |
-| 20 | ECC | Search "ECC" or "affaan-m/ecc" on GitHub, see note below | Agent harness tuning: skills, memory, security, research-first workflow | You want one harness setup across Claude Code, Codex, Cursor, and similar tools |
+| 20 | ECC | [affaan-m/ecc](https://github.com/affaan-m/ecc) | Agent harness tuning: skills, memory, security, research-first workflow | You want one harness setup across Claude Code, Codex, Cursor, and similar tools |
 
-Check the exact owner and repo for 15 and 20 before installing. These names have many mirrors. Do not install a fork without reading it.
+Both names have many mirrors. Use the linked repos. Do not install a fork without reading it.
 
 ## Watchlist for next Saturday
 
 Did not make v2. First in line if a Top 20 slot opens:
 
 - Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13
-- GitNexus: client-side knowledge graph with built-in RAG, alternative to 15
+- react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet
+- GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15
 - Context Engineering / Context Mode: token and context optimization, alternative to 19
 - open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core
-- driving-seat (Tanmay-Ts/driving-seat): human decision gates before irreversible actions, new and unproven
+- Karpathy Skills (multica-ai/andrej-karpathy-skills): single CLAUDE.md, four rules from Karpathy's post, about 229k stars. Duplicates 1, no outcome evidence beyond stars
+- Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet
+- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check
 - Pristine: UI critique skill, no verified repo yet
 - playwright-cli skill: browser QA through an npm package, overlaps 12
-- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 476 stars, 3 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check
 
 ## Left out on purpose
 
-See archive/ARCHIVED.md. Short version: algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx. Real Anthropic skills, just not software engineering.
+See archive/ARCHIVED.md. Short version: algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx, discernment-nudge, academy-guide, doc-coauthoring. Real Anthropic skills, just not software engineering.
 
 ## Curation rules
 
