@@ -2,8 +2,8 @@
 
 A weekly curated list. Software engineering only, no fluff.
 
-Last updated: 2026-11-07 (v2, no swaps)
-Next curation: Saturday 2026-11-14, around 9am PT
+Last updated: 2026-11-14 (v3, one swap)
+Next curation: Saturday 2026-11-21, around 9am PT
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
 Browse it as a simple site: https://aiships.github.io/engineering-claude-skills/
@@ -14,7 +14,7 @@ This is an index, not a copy. Each entry links to its source repo. Read the sour
 
 1. Start with one workflow framework from 1-6, not all six.
 2. Add the official Anthropic skills you actually need from 7-12.
-3. Add one skill per real pain point after that: UI, understanding code, context, tokens.
+3. Add one skill per real pain point after that: UI, understanding code, context, tokens, backend safety.
 4. Install only what you will use. Every enabled skill costs context.
 
 Install patterns (check the source repo first, commands change):
@@ -72,31 +72,35 @@ Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
 | 15 | Understand-Anything | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything), about 91k stars, checked Nov 7 on GitHub | Turns a codebase into an interactive knowledge graph you can explore and ask about | You are onboarding to an unfamiliar codebase |
+
+Honest caveat: an independent Nov 2026 test on a 72,000-line codebase found code maps did not make answers more accurate. Graphify cut reading about 12 percent, and Understand Anything helped only when asked through `/understand-chat`. Maps save reading time. They do not fix hard answers, so ask "where else could this be decided?" yourself.
 | 16 | Context7 | [upstash/context7](https://github.com/upstash/context7) | Keeps current library docs in front of the model | Claude keeps using outdated library APIs |
 | 17 | Claude-Mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Persistent memory across sessions. Note: browser installs Oct 25-Nov 2 uploaded 30 days of prompts without asking; fixed in v15.8.3 (Nov 2) with a consent panel. Check the consent screen on install | Claude forgets your project between sessions |
 | 18 | Diagram Design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design), about 53k stars | Architecture, flow, org, and timeline diagrams, 44 types, exports to HTML, SVG, PNG | You need clean architecture diagrams from a codebase or a brief |
 
-### Efficiency and harness
+### Efficiency, harness, and backend
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
 | 19 | Caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Cuts output tokens hard while keeping technical accuracy | You are hitting usage limits and want shorter output |
-| 20 | ECC | [affaan-m/ecc](https://github.com/affaan-m/ecc) | Agent harness tuning: skills, memory, security, research-first workflow | You want one harness setup across Claude Code, Codex, Cursor, and similar tools |
+| 20 | Backendskills | [globalmpc/backendskills](https://github.com/globalmpc/backendskills), 58 stars, created Nov 5, checked Nov 14 on GitHub | Three skills (api-endpoint, data-integrity, db-migration) that force caller-scoped queries, locks and idempotency keys, and expand-then-contract migrations | Your agent writes backend code that passes the demo and breaks in production: auth holes, money bugs, bad migrations |
+
+Honest caveat: the evidence is a 150-run stress test run by the author, not an independent replication. Critical mistakes fell from 25 to 2, but 20 of the 25 came from two tasks (login rate-limiting and column renames), 10 of 15 tasks had no critical mistake either way, and runs with the skills cost about twice as much ($0.11 vs $0.06). The raw runs and rerun instructions are in the repo's bench folder, which is why it earned the slot over ECC. Install with `npx skills add globalmpc/backendskills` (test-installed Nov 14: repo clones, all three skills found).
 
 Both names have many mirrors. Use the linked repos. Do not install a fork without reading it.
 
 ## Watchlist for next Saturday
 
-Did not make v2. First in line if a Top 20 slot opens:
+Did not make v3. First in line if a Top 20 slot opens:
 
 - Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13
-- react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet
+- react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet, last commit still Oct 27
 - GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15
 - Context Engineering / Context Mode: token and context optimization, alternative to 19
 - open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core
-- Karpathy Skills (multica-ai/andrej-karpathy-skills): single CLAUDE.md, four rules from Karpathy's post, about 229k stars. Duplicates 1, no outcome evidence beyond stars
-- Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet
-- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check
+- Graphify (Graphify-Labs/graphify): codebase knowledge graph with a /graphify skill, alternative to 15. The Nov 2026 head-to-head found it cut reading about 12 percent but did not improve answer accuracy, so it stays a watchlist alternative, not a swap
+- Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet. Active Nov 8
+- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check. Active Nov 10-11, still no evals
 - Pristine: UI critique skill, no verified repo yet
 - playwright-cli skill: browser QA through an npm package, overlaps 12
 

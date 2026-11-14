@@ -8,6 +8,24 @@ The only things that skip the archive are trash: dead repos with no README, brok
 
 | Date evaluated | Skill | Verdict | Reason |
 |---|---|---|---|
+| 2026-11-14 | Backendskills (globalmpc/backendskills) | In | Took slot 20 from ECC. Author-run 150-run stress test, critical mistakes 25 to 2, raw runs published, MIT, install verified Nov 14. Effect concentrated in 2 of 15 tasks, costs about 2x per run, no independent replication yet |
+| 2026-11-14 | Graphify (Graphify-Labs/graphify) | Watchlist | Codebase knowledge graph with a /graphify skill, alternative to 15. Nov 2026 head-to-head: cut reading about 12 percent, did not improve answer accuracy. No accuracy gain, stays watchlist |
+| 2026-11-14 | MCode Stack (MiniMax-AI/mcode-stack) | Watchlist | Recheck: active Nov 10-11, new youfang stack. Still no published evals. Stays on watchlist |
+| 2026-11-14 | Unslop (heydamir/unslop) | Watchlist | Recheck: active Nov 8. Still no comparative evaluation against 13 and 14. Stays on watchlist |
+| 2026-11-14 | react-best-practices (vercel-labs/agent-skills) | Watchlist | Recheck: last commit still Oct 27, no benchmarks yet. Stays on watchlist |
+| 2026-11-14 | Karpathy Skills (multica-ai/andrej-karpathy-skills) | Rejected | Was watchlist Nov 7. Last commit Apr 20, 2026, about 208 days ago. Fails the 90-day maintained rule. Dropped from the watchlist |
+| 2026-11-14 | lot-map (alexeyw/lot-map) | Rejected | Live map of what Claude Code is doing, 799 stars, created Nov 9. Observability tool first, skill second. Not a skill for this list |
+| 2026-11-14 | claude-model-router (Rajvardhman05/claude-model-router) | Rejected | Picks the right Claude model per task. 31 stars, 4 days old, no outcome evidence. Duplicates harness judgment in 1 and 20 |
+| 2026-11-14 | claude-config (AngeloDotNet/claude-config) | Rejected | Personal .NET and Angular rules template, 1 star. Narrow stack, no evidence, reads as one person's config, not a general skill |
+| 2026-11-14 | REA - Reverse Engineer Anything (morluto) | Rejected | MCP server for inspecting binaries and apps. Niche reverse-engineering tool, MCP server first, not a general software engineering skill |
+| 2026-11-14 | Agent Reach (Panniantong) | Rejected | Out of scope: gives an agent read access to Reddit, X, YouTube, LinkedIn. Research and social access, not software engineering |
+| 2026-11-14 | Last 30 Days (Matt Van Horn) | Rejected | Out of scope: researches a topic across Reddit, X, YouTube, Hacker News. Research skill, not software engineering |
+| 2026-11-14 | Career Ops (santifer) | Rejected | Out of scope: researches jobs and drafts CVs. Career tooling, not software engineering |
+| 2026-11-14 | cinematic-skill (Moh4696/cinematic-skill) | Rejected | Out of scope: narrated cinematic films built from code. Creative video work, not software engineering |
+| 2026-11-14 | guizang-game-skill (op7418/guizang-game-skill) | Rejected | Out of scope: builds playable 3D browser games. Game dev novelty, not general software engineering |
+| 2026-11-14 | line-art-animation (JDhruv14/line-art-animation) | Rejected | Out of scope: animated line-art SVG components. Creative animation, not software engineering |
+| 2026-11-14 | spine-hero-skill (enoch3712/spine-hero-skill) | Rejected | Out of scope: animates a 2D game hero from a painting. Game art, not software engineering |
+| 2026-11-14 | claude-3d-animated-shorts (thuann-vn/claude-3d-animated-shorts) | Rejected | Out of scope: vertical 3D animated story Shorts. Creative video, not software engineering |
 | 2026-11-07 | Karpathy Skills (multica-ai/andrej-karpathy-skills) | Watchlist | Single CLAUDE.md, four rules from Karpathy's post. About 229k stars, but duplicates Superpowers (#1) and has no outcome evidence beyond stars. Different repo from the dead one dropped Oct 31 |
 | 2026-11-07 | react-best-practices (vercel-labs/agent-skills) | Watchlist | Official Vercel source, 33,682 stars, last commit Oct 27. 40+ React and Next.js performance rules. Distinct from #10 (performance, not design). No benchmarks or before-after yet, and no weak slot to take |
 | 2026-11-07 | Unslop (heydamir/unslop) | Watchlist | Staged UI review, 11,202 stars on day one. Overlaps #13 and #14, no comparative evaluation yet |
@@ -28,6 +46,12 @@ The only things that skip the archive are trash: dead repos with no README, brok
 | 2026-10-27 | driving-seat (Tanmay-Ts/driving-seat) | Watchlist | Human decision gates before irreversible actions, new and unproven |
 | 2026-10-27 | Pristine | Watchlist | UI critique skill, no verified repo yet |
 | 2026-10-27 | playwright-cli skill | Watchlist | Browser QA through an npm package, overlaps 12 |
+
+## Dropped 2026-11-14
+
+| Date dropped | Skill | Replaced by | Reason |
+|---|---|---|---|
+| 2026-11-14 | ECC | Backendskills (globalmpc/backendskills) | Active and maintained, but no published outcome evidence, and its harness-tuning job is partly covered by #1 and #4. Backendskills brings a disclosed 150-run stress test (critical mistakes 25 to 2), raw runs published, MIT, install verified |
 
 ## Dropped 2026-10-31
 

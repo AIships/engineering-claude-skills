@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-14 - v3, one swap
+
+- Dropped ECC (slot 20): active and maintained, but no published outcome evidence, and its harness-tuning job is partly covered by #1 (Superpowers harness bootstrap) and #4 (gstack process roles). Replaced by globalmpc/backendskills: three backend-convention skills (api-endpoint, data-integrity, db-migration), MIT licensed, install with `npx skills add globalmpc/backendskills`. Test-installed Nov 14: the repo clones and all three skills are found. Evidence is an author-run 150-run stress test with hidden checks: critical mistakes 25 to 2 (Sonnet 5.5 13/75 to 0/75). Read the caveats in the README before trusting the headline: 20 of the 25 came from two tasks, 10 of 15 tasks had no critical mistake either way, runs cost about twice as much, and there is no independent replication yet. The raw runs and rerun instructions are in the repo, which is what earned it the slot.
+- The other 19 entries were rechecked: every source repo had a commit Nov 6-14, no breaking changes. anthropics/skills had two commits this week: Nov 6 moved the Office skills to Apache 2.0, Nov 14 updated docx, pptx, xlsx, pdf. Still 19 folders, no new engineering skill. mcp-builder (#8) got a TypeScript SDK v2 guide Oct 28, so #8 stays current.
+- Watchlist: Karpathy Skills (multica-ai) dropped from the watchlist, last commit Apr 20, 2026, fails the 90-day maintained rule. Added Graphify as an alternative to #15. MCode Stack, Unslop, and react-best-practices rechecked, all still waiting on evidence. Hallmark, GitNexus, open-gsd, Context Engineering, Pristine, playwright-cli unchanged.
+- Evidence note: a Nov 2026 independent test on a 72,000-line codebase found code maps did not make answers more accurate. Graphify cut reading about 12 percent, Understand Anything helped only when asked through /understand-chat. Added as a caveat under #15.
+- Candidates evaluated this week are all in archive/ARCHIVED.md: backendskills (in), Graphify, lot-map, claude-model-router, claude-config, REA, Agent Reach, Last 30 Days, Career Ops, cinematic-skill, guizang-game-skill, line-art-animation, spine-hero-skill, claude-3d-animated-shorts, MCode Stack recheck, Unslop recheck, react-best-practices recheck, Karpathy Skills (dropped from watchlist, unmaintained).
+- The Pages site (docs/index.html) was rebuilt to match the README.
+
 ## 2026-11-07 - v2, no swaps
 
 - No swaps. All 20 sources rechecked: every repo had a commit in the last 7 days, no breaking changes. Superpowers shipped v7.0.2 (Nov 3), Caveman 4.1.0 (Nov 7), Planning with Files v3.28.1 (Nov 7). anthropics/skills still has the same 19 folders, no new engineering skill; its Nov 6 commit only moved the Office skills to Apache 2.0.
