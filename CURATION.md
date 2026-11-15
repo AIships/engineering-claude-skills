@@ -2,7 +2,7 @@
 
 ## Goal
 
-A Top 20 list of Claude skills a software engineer must have, kept current every week. Not a dump of everything on GitHub.
+Two Top 20 lists of Claude skills, one for software engineering and one for finance, kept current every week. Not a dump of everything on GitHub.
 
 ## Scope: in
 
@@ -16,6 +16,18 @@ A Top 20 list of Claude skills a software engineer must have, kept current every
 - Brand, internal comms, marketing, SEO, general writing.
 - Document production (docx, pdf, pptx, xlsx) unless it is part of a dev workflow. Those live in archive.
 - Skills with no maintained source, no README, or a broken install.
+
+## Finance scope: in
+
+- Investing research: screeners, 13F and insider tracking, earnings analysis, valuation, portfolio research.
+- Trading tooling: paper-first by default, backtesting, risk management, position sizing.
+- Personal finance: budgeting, tax lots, portfolio tracking, rebalancing.
+
+## Finance scope: out
+
+- Crypto pump bots and guaranteed-returns hype.
+- Signal-selling schemes.
+- Anything that places real-money orders without human approval.
 
 ## How a skill gets in
 
@@ -54,6 +66,7 @@ The only things that skip the archive are trash: dead repos with no README, brok
 - Write like a person, not an assistant. Short sentences. Plain words.
 - Keyboard characters only. No em dashes, no special symbols, no decorative unicode. A hyphen does the job.
 - Minimalism: say it once, say it short. Essentialism: every line earns its place. Craftsmanship: get the details right, check the links, spell things correctly.
+- Commit messages follow Apache open source style: short subject line, imperative mood, plain English, no fluff. Example: "Add finance top 20 list". Nothing that sounds generated.
 
 ## Weekly process, every Saturday around 9am PT
 
@@ -62,4 +75,4 @@ The only things that skip the archive are trash: dead repos with no README, brok
 3. Test-install any candidate before adding. Do not add untested skills.
 4. Swap at most 3 per week, usually 0 to 1. Stability matters.
 5. Update README.md (date, table, watchlist), CHANGELOG.md (what changed and why), archive/ARCHIVED.md (dropped skills AND every candidate evaluated this week with its verdict: in, watchlist, or rejected).
-6. Commit with a plain human message. Example: "Weekly curation Oct 31: swapped X for Y".
+6. Commit in Apache style: short imperative subject, plain English. Example: "Swap ECC for Backendskills".
