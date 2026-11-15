@@ -110,7 +110,7 @@ See archive/ARCHIVED.md. Short version: algorithmic-art, canvas-design, brand-gu
 
 ## Curation rules
 
-Full rules in CURATION.md. Short version:
+Full rules in [../CURATION.md](../CURATION.md). Short version:
 
 - Software engineering only.
 - Maintained: a commit or release in the last 90 days, or an official Anthropic source that is still current.
