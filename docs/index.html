@@ -34,7 +34,7 @@
 
 <h1>Claude skills, curated</h1>
 <p class="meta">Two Top 20 lists, ranked by outcomes, not checklists: <a href="#engineering">engineering</a> and <a href="#finance">finance</a>.<br>
-Engineering last updated Nov 14, 2026 (v3). Finance launched Nov 15, 2026 (v1, 19 of 20 slots filled). Next curation Saturday Nov 21, around 9am PT.<br>
+Engineering last updated Nov 21, 2026 (v3, no swaps). Finance last updated Nov 21, 2026 (v1, 18 of 20 slots filled). Next curation Saturday Nov 28, around 9am PT.<br>
 Rule: max 20 per list. One in, one out. Dropped skills move to archive, never deleted.</p>
 
 <h2 id="engineering">Engineering Top 20</h2>
@@ -140,7 +140,9 @@ Rule: max 20 per list. One in, one out. Dropped skills move to archive, never de
 <p>Cuts output tokens hard while keeping technical accuracy.</p>
 <p class="use">Use when: you are hitting usage limits and want shorter output.</p></div>
 
-<div class="skill"><p><span class="num">20</span><span class="name"><a href="https://github.com/globalmpc/backendskills">Backendskills</a></span> (58 stars, created Nov 5)</p>
+<p class="note">Honest caveat: Caveman's author corrected the README Nov 17, dropping the 76 percent working-day claim (3 sessions, run once). Terminal-Bench 4 against Claude Code is level within noise; the tagline now reads 21 percent less than Codex per solved task. The claim got smaller and more honest, which is why it stays.</p>
+
+<div class="skill"><p><span class="num">20</span><span class="name"><a href="https://github.com/globalmpc/backendskills">Backendskills</a></span> (61 stars, created Nov 5)</p>
 <p>Three skills (api-endpoint, data-integrity, db-migration) that force caller-scoped queries, locks and idempotency keys, and expand-then-contract migrations.</p>
 <p class="use">Use when: your agent writes backend code that passes the demo and breaks in production: auth holes, money bugs, bad migrations.</p></div>
 
@@ -151,14 +153,19 @@ Rule: max 20 per list. One in, one out. Dropped skills move to archive, never de
 <h2>Watchlist for next Saturday</h2>
 <p>Did not make v3. First in line if a Top 20 slot opens:</p>
 <ul>
-  <li>Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13</li>
-  <li>react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet, last commit still Oct 27</li>
-  <li>GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15</li>
-  <li>Context Engineering / Context Mode: token and context optimization, alternative to 19</li>
-  <li>open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core</li>
+  <li>Context Mode (mksglu/context-mode): MCP server plus hooks that shrink tool output before it reaches the context window. 34,357 stars, v2.2.1 Nov 17. One independent test (yoDEV, Nov 19) cut a 174 KB log to 6.5 KB with all three failures kept, but it measured plumbing only, no live model session. License is Elastic 2.0, and the Gateway routes requests through the vendor's server. Closest challenger to 19, stays watchlist until a live-session replication lands</li>
+  <li>Claude-BugHunter (elementalsouls/Claude-BugHunter): 83 bug-hunting skills from 681 HackerOne reports. 15,553 stars, up 9,300 in a week. Evidence thin: self-reported red-team experience, no measured outcomes</li>
+  <li>spec-kit (github/spec-kit): GitHub's official spec-driven development toolkit, 150,916 stars. No independent outcome evidence, duplicates the workflow jobs in 1, 3, 5, and 6</li>
+  <li>cloudflare/security-audit-skill: six-phase security audit from Cloudflare's internal harness, 76,573 stars. Last commit Sep 14, quiet 8 weeks</li>
+  <li>ponytail (DietrichGebert/ponytail): one skill that makes the agent write less code. 196,168 stars. Author claims only, no independent replication</li>
+  <li>emilkowalski/skills: design-engineering skills, 58,599 stars. Overlaps 13 and 14, no outcome evidence</li>
+  <li>Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13. 58,944 stars, still no head-to-head vs 13 and 14</li>
+  <li>react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 34,654 stars. Distinct from 10: performance, not design. No benchmarks yet, last commit Nov 20</li>
+  <li>GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15. Active Nov 21, still no head-to-head vs 15</li>
+  <li>open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core. Active Nov 21, still no published evals vs 4 and 5</li>
   <li>Graphify (Graphify-Labs/graphify): codebase knowledge graph with a /graphify skill, alternative to 15. The Nov 2026 head-to-head found it cut reading about 12 percent but did not improve answer accuracy, so it stays a watchlist alternative, not a swap</li>
-  <li>Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet. Active Nov 8</li>
-  <li>MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check. Active Nov 10-11, still no evals</li>
+  <li>Unslop (heydamir/unslop): staged UI review, 19,649 stars. Overlaps 13 and 14, no comparative evaluation yet. Active Nov 15</li>
+  <li>MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 740 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check. Active Nov 11, still no evals</li>
   <li>Pristine: UI critique skill, no verified repo yet</li>
   <li>playwright-cli skill: browser QA through an npm package, overlaps 12</li>
 </ul>
@@ -167,16 +174,16 @@ Rule: max 20 per list. One in, one out. Dropped skills move to archive, never de
 <p>algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx, discernment-nudge, academy-guide, doc-coauthoring. Real Anthropic skills, just not software engineering. Full history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/engineering/archive/ARCHIVED.md">archive</a>.</p>
 
 <h2 id="finance">Finance Top 20</h2>
-<p>Skills that help a retail investor and trader make better decisions and better risk-adjusted returns. 19 of 20 slots filled in v1. One slot left open on purpose: nothing else passed the bar, and we do not pad.</p>
+<p>Skills that help a retail investor and trader make better decisions and better risk-adjusted returns. 18 of 20 slots filled in v1. Two slots open on purpose: #9 dropped Nov 21 for going stale, and nothing else passed the bar. We do not pad.</p>
 <p class="note">The honest part first: no skill on this list has a verified performance record. Not one publishes an audited track record or an independently replicated backtest. The ranking runs on what can be checked: disclosed methodology, real risk controls, paper-first defaults, maintenance, and adoption. Research only, not financial advice. Full list with notes: <a href="https://github.com/AIships/engineering-claude-skills/blob/main/finance/README.md">finance/README.md</a>.</p>
 
 <div class="skill"><p><span class="num">1</span><span class="name"><a href="https://github.com/anthropics/financial-services">Claude for Financial Services</a></span> (about 41k stars)</p>
 <p>Anthropic's official finance plugins: comps, DCF, LBO, earnings, 3-statement models. Built for professionals, data connectors need paid subscriptions.</p></div>
 
-<div class="skill"><p><span class="num">2</span><span class="name"><a href="https://github.com/tradermonty/claude-trading-skills">Claude Trading Skills</a></span> (about 5.4k stars)</p>
+<div class="skill"><p><span class="num">2</span><span class="name"><a href="https://github.com/tradermonty/claude-trading-skills">Claude Trading Skills</a></span> (about 7.6k stars)</p>
 <p>74 skills for individual investors: regime checks, screeners, position sizing, trade planning, journaling, postmortems. Not a signal service, places no orders.</p></div>
 
-<div class="skill"><p><span class="num">3</span><span class="name"><a href="https://github.com/Jakeschincariol/day-trader-skill">Day Trader Skill</a></span> (about 8k stars)</p>
+<div class="skill"><p><span class="num">3</span><span class="name"><a href="https://github.com/Jakeschincariol/day-trader-skill">Day Trader Skill</a></span> (about 9k stars)</p>
 <p>Chart scanner, news monitor, entry timer, exit planner, a 10,000-replay setup tester, risk and budget gates. Paper trading is the default, no order without your yes.</p></div>
 
 <div class="skill"><p><span class="num">4</span><span class="name"><a href="https://github.com/himself65/finance-skills">Finance Skills</a></span> (about 3.6k stars)</p>
@@ -194,8 +201,8 @@ Rule: max 20 per list. One in, one out. Dropped skills move to archive, never de
 <div class="skill"><p><span class="num">8</span><span class="name"><a href="https://github.com/MobiusQuant/OpenMobius-skill">OpenMobius Skill</a></span> (726 stars)</p>
 <p>2,008 curated ICT/SMC knowledge cards, live data, charts. A contested methodology, listed as a knowledge base, not proof.</p></div>
 
-<div class="skill"><p><span class="num">9</span><span class="name"><a href="https://github.com/quant-sentiment-ai/claude-equity-research">Claude Equity Research</a></span> (759 stars)</p>
-<p>Generates full equity research reports: fundamentals, technicals, risk.</p></div>
+<div class="skill"><p><span class="num">9</span><span class="name">Open</span></p>
+<p>Dropped Nov 21: Claude Equity Research went stale (last human change Aug 22, only a bot committing since). Nothing else passed the bar to fill it.</p></div>
 
 <div class="skill"><p><span class="num">10</span><span class="name"><a href="https://github.com/openaccountants/openaccountants">OpenAccountants</a></span> (492 stars)</p>
 <p>2,132 tax skills across 249 jurisdictions, every rate and deadline cited to its legal source. AGPL license.</p></div>
@@ -230,7 +237,7 @@ Rule: max 20 per list. One in, one out. Dropped skills move to archive, never de
 <div class="skill"><p><span class="num">20</span><span class="name">Open</span></p>
 <p>Nothing else passed the bar this week.</p></div>
 
-<p class="note">Finance watchlist: global-stock-data, Kansoku, MAIA Skill, Fadacai Portfolio, Alpha Skills, Oddly, claude-finance-skills, Excel Analyst Pro. Full evaluation record, including the rejections, in the <a href="https://github.com/AIships/engineering-claude-skills/blob/main/finance/archive/ARCHIVED.md">finance archive</a>.</p>
+<p class="note">Finance watchlist: risk-aware-trading-agents, global-stock-data, Kansoku, MAIA Skill, Fadacai Portfolio, Alpha Skills, Oddly, claude-finance-skills, Excel Analyst Pro. Full evaluation record, including the rejections, in the <a href="https://github.com/AIships/engineering-claude-skills/blob/main/finance/archive/ARCHIVED.md">finance archive</a>.</p>
 
 <footer>
 <p>Curated weekly. Rules in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/CURATION.md">CURATION.md</a>, engineering history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/engineering/CHANGELOG.md">CHANGELOG.md</a>, finance history in <a href="https://github.com/AIships/engineering-claude-skills/blob/main/finance/CHANGELOG.md">CHANGELOG.md</a>, source at <a href="https://github.com/AIships/engineering-claude-skills">github.com/AIships/engineering-claude-skills</a>.</p>
