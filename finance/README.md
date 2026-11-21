@@ -2,9 +2,9 @@
 
 A weekly curated list for retail investors and traders. Ranked by outcomes, not checklists.
 
-Last updated Nov 15, 2026 (v1). 19 of 20 slots filled. One slot left open on purpose: nothing else passed the bar, and we do not pad.
+Last updated Nov 21, 2026 (v1). 18 of 20 slots filled. Two slots open on purpose: #9 dropped this week for going stale (see changelog), and nothing else passed the bar. We do not pad.
 
-Star counts checked Nov 15, 2026. They move daily. Treat them as an adoption signal, not proof of quality.
+Star counts checked Nov 21, 2026. They move daily. Treat them as an adoption signal, not proof of quality.
 
 ## The honest part first
 
@@ -21,24 +21,24 @@ Out: crypto pump bots, guaranteed-returns hype, signal-selling, anything that pl
 
 | # | Skill | Lane | Stars | What it does |
 |---|---|---|---|---|
-| 1 | [Claude for Financial Services](https://github.com/anthropics/financial-services) | Investing research | 41.3k | Anthropic's official finance plugins: comps, DCF, LBO, earnings, 3-statement models, plus named research agents |
-| 2 | [Claude Trading Skills](https://github.com/tradermonty/claude-trading-skills) | Investing process | 5.4k | 74 skills for individual investors: regime checks, screeners, position sizing, trade planning, journaling, postmortems |
-| 3 | [Day Trader Skill](https://github.com/Jakeschincariol/day-trader-skill) | Trading | 8.0k | 11 skills: chart scanner, news monitor, entry timer, exit planner, a 10,000-replay setup tester, risk and budget gates |
+| 1 | [Claude for Financial Services](https://github.com/anthropics/financial-services) | Investing research | 41.4k | Anthropic's official finance plugins: comps, DCF, LBO, earnings, 3-statement models, plus named research agents |
+| 2 | [Claude Trading Skills](https://github.com/tradermonty/claude-trading-skills) | Investing process | 7.6k | 74 skills for individual investors: regime checks, screeners, position sizing, trade planning, journaling, postmortems |
+| 3 | [Day Trader Skill](https://github.com/Jakeschincariol/day-trader-skill) | Trading | 9.0k | 11 skills: chart scanner, news monitor, entry timer, exit planner, a 10,000-replay setup tester, risk and budget gates |
 | 4 | [Finance Skills](https://github.com/himself65/finance-skills) | Investing research | 3.6k | Analysis library: correlation, liquidity, market analysis, TradingView reader |
-| 5 | [Trader Skill](https://github.com/Jakeschincariol/trader-skill) | Investing research | 1.8k | 13F copycat portfolios from SEC filings, Congress trade tracker, earnings analyst, tax lots, rebalancing |
-| 6 | [A-Stock Data](https://github.com/simonlin1212/a-stock-data) | Data layer | 11.8k | Full China A-share data stack in one SKILL.md: 87 endpoints, 34 sources, almost no API keys |
-| 7 | [Trading Skills](https://github.com/staskh/trading_skills) | Trading, options | 411 | About 25 skills: options advisor with Greeks and roll candidates, insider tracker, stock reports |
-| 8 | [OpenMobius Skill](https://github.com/MobiusQuant/OpenMobius-skill) | Trading methodology | 726 | 2,008 curated ICT/SMC knowledge cards, live data, chart generation. Analysis only |
-| 9 | [Claude Equity Research](https://github.com/quant-sentiment-ai/claude-equity-research) | Investing research | 759 | Generates full equity research reports: fundamentals, technicals, risk |
-| 10 | [OpenAccountants](https://github.com/openaccountants/openaccountants) | Personal finance, tax | 492 | 2,132 tax skills across 249 jurisdictions, every rate and deadline cited to its legal source |
+| 5 | [Trader Skill](https://github.com/Jakeschincariol/trader-skill) | Investing research | 2.0k | 13F copycat portfolios from SEC filings, Congress trade tracker, earnings analyst, tax lots, rebalancing |
+| 6 | [A-Stock Data](https://github.com/simonlin1212/a-stock-data) | Data layer | 12.0k | Full China A-share data stack in one SKILL.md: 87 endpoints, 34 sources, almost no API keys |
+| 7 | [Trading Skills](https://github.com/staskh/trading_skills) | Trading, options | 416 | About 25 skills: options advisor with Greeks and roll candidates, insider tracker, stock reports |
+| 8 | [OpenMobius Skill](https://github.com/MobiusQuant/OpenMobius-skill) | Trading methodology | 730 | 2,008 curated ICT/SMC knowledge cards, live data, chart generation. Analysis only |
+| 9 | Open | - | - | Nothing else passed the bar to fill it |
+| 10 | [OpenAccountants](https://github.com/openaccountants/openaccountants) | Personal finance, tax | 501 | 2,132 tax skills across 249 jurisdictions, every rate and deadline cited to its legal source |
 | 11 | [FinLab AI Skill](https://github.com/koreal6803/finlab-ai) | Trading, backtesting | 427 | Backtest Taiwan and US stocks on FinLab's real engine and adjusted data, no hand-rolled code |
-| 12 | [Agentii Investment Intelligence](https://github.com/agentii-ai/agentii-investment-intelligence) | Investing research | 210 | 25 skills: SEC filings and XBRL financials, earnings, volatility analysis |
-| 13 | [InvestSkill](https://github.com/yennanliu/InvestSkill) | Investing research | 285 | US stock analysis frameworks, no API keys, no subscriptions |
-| 14 | [Finance Assistant](https://github.com/googlarz/finance-assistant) | Personal finance | 53 | Local-first money copilot: real tax statute on your numbers, bank statement parsing, Monte Carlo FIRE planning |
-| 15 | [Stock Skill](https://github.com/xiongcp/stock-skill) | Trading, technicals | 119 | Deterministic K-line structure analysis for A-shares, HK, and US. Same input, same output |
-| 16 | [Longbridge Skills](https://github.com/longbridge/skills) | Broker data | 71 | Official Longbridge skills: market data, fundamentals, valuation, your own portfolio across HK, US, A-share, Singapore |
+| 12 | [Agentii Investment Intelligence](https://github.com/agentii-ai/agentii-investment-intelligence) | Investing research | 212 | 25 skills: SEC filings and XBRL financials, earnings, volatility analysis |
+| 13 | [InvestSkill](https://github.com/yennanliu/InvestSkill) | Investing research | 291 | US stock analysis frameworks, no API keys, no subscriptions |
+| 14 | [Finance Assistant](https://github.com/googlarz/finance-assistant) | Personal finance | 54 | Local-first money copilot: real tax statute on your numbers, bank statement parsing, Monte Carlo FIRE planning |
+| 15 | [Stock Skill](https://github.com/xiongcp/stock-skill) | Trading, technicals | 121 | Deterministic K-line structure analysis for A-shares, HK, and US. Same input, same output |
+| 16 | [Longbridge Skills](https://github.com/longbridge/skills) | Broker data | 73 | Official Longbridge skills: market data, fundamentals, valuation, your own portfolio across HK, US, A-share, Singapore |
 | 17 | [Anti-Gambling Trader](https://github.com/mars-tw/anti-gambling-trader-tw) | Trading, risk | 1.2k | Discipline toolkit: paper broker by default, local trade statistics. Built to stop bad trades, not find more |
-| 18 | [Serenity Stock Choke](https://github.com/fadewalk/serenity-stock-choke) | Investing, screening | 535 | Screening by the Serenity supply-chain bottleneck theory across A-shares, HK, US |
+| 18 | [Serenity Stock Choke](https://github.com/fadewalk/serenity-stock-choke) | Investing, screening | 537 | Screening by the Serenity supply-chain bottleneck theory across A-shares, HK, US |
 | 19 | [Portfolio123 Skill](https://github.com/cmoralesm/P123-Claude-Skill) | Investing, quant | 23 | Portfolio123 from an agent: 464 functions, 4,456 factors, reference checked line by line against the official docs |
 | 20 | Open | - | - | Nothing else passed the bar this week |
 
@@ -50,9 +50,10 @@ Out: crypto pump bots, guaranteed-returns hype, signal-selling, anything that pl
 - **6, A-Stock Data:** a data layer, not a strategy. It makes no decision claims. US-only investors may prefer the watchlist's global-stock-data instead.
 - **7, Trading Skills (options):** one stop-loss skill can place orders, only with an explicit flag. Approval-gated, not autonomous.
 - **8, OpenMobius:** ICT/SMC is a contested methodology. Listed as a knowledge base, not as proof of anything.
+- **9, dropped Nov 21:** Claude Equity Research (quant-sentiment-ai/claude-equity-research) left the list for failing the maintained rule. Last human commit Aug 22, 2026, last README change Aug 11, no releases, and only an automated star-chart bot committing since. It can return if the maintainer ships again. Full record in the archive.
 - **10, OpenAccountants:** AGPL-3.0 license, the one licensing caveat on this list. Its verification method is the strongest here: answers sourced to law, not model memory.
 - **11, FinLab:** no LICENSE file found in the repo as of Nov 15. Vendor platform, full use needs a FinLab account.
-- **14, Finance Assistant:** tiny adoption (53 stars). It is here because the personal finance lane is nearly empty and this one is genuinely built: deterministic calculators, data never leaves your machine, 1,630 tests claimed by the author.
+- **14, Finance Assistant:** tiny adoption (54 stars). It is here because the personal finance lane is nearly empty and this one is genuinely built: deterministic calculators, data never leaves your machine, 1,630 tests claimed by the author.
 - **16, Longbridge:** portfolio features need a Longbridge account. A data and access layer, not advice.
 - **17, Anti-Gambling Trader:** Traditional Chinese, Taiwan-market focused.
 - **18, Serenity Stock Choke:** one named investor's public method distilled into a skill. A method label, not an endorsement.
@@ -62,14 +63,15 @@ Out: crypto pump bots, guaranteed-returns hype, signal-selling, anything that pl
 
 Did not make v1. First in line if a slot opens:
 
-- global-stock-data (simonlin1212/global-stock-data): US/global sibling of 6, 1.9k stars. One of the two belongs; 6 has 6x the adoption
-- Kansoku (kansoku-trade/kansoku): trading discipline skills inside a Mac stock app. License unclear, app-first
-- MAIA Skill (Hainrixz/maia-skill): multi-agent market analysis, multi-asset including crypto, overlaps 4
-- Fadacai Portfolio (PatrickSUDO/fadacai-portfolio): research framework with a thesis ledger. Traditional Chinese
-- Alpha Skills (mphinance/alpha-skills): backtesting and edge research, 32 stars, edge claims unverified
-- Oddly (KorroAi/oddly): SEC odd-lot tender offer scanner with backtest. 18 stars, AGPL
-- claude-finance-skills (andreworia/claude-finance-skills): IB/PE valuation skills, but 1 covers the same jobs officially
-- Excel Analyst Pro (jeremylongshore/excel-analyst-pro-skill-md): DCF and modeling toolkit, overlaps 1
+- risk-aware-trading-agents (jackson-cmd/risk-aware-trading-agents): AI trading agents for US stocks with minute-level news replay, no look-ahead bias, frozen 2020/2022/2026 markets, paper-trading agents ranked vs SPY on a public leaderboard. 362 stars, created Nov 12, MIT. Disclosed methodology, look-ahead check on every run, costs included. Strongest new find this week, still too young: 9 days old, a pip package and MCP server rather than a native Claude skill, and it ships live trading on 10 brokers behind three explicit switches (paper is the default). Revisit in 2-3 weeks
+- global-stock-data (simonlin1212/global-stock-data): US/global sibling of 6, 1.9k stars. v2.3.0 added a US macro layer (BLS, jobless claims). One of the two belongs; 6 has 6x the adoption
+- Kansoku (kansoku-trade/kansoku): trading discipline skills inside a Mac stock app. License unclear, app-first, v0.43.6 Nov 16
+- MAIA Skill (Hainrixz/maia-skill): multi-agent market analysis, multi-asset including crypto, overlaps 4. Effectively quiet since June
+- Fadacai Portfolio (PatrickSUDO/fadacai-portfolio): research framework with a thesis ledger. Traditional Chinese. Extremely active Nov 20-21 with honest methodology: pre-registered shadow-account conditions, published "no edge" findings. But it is a personal portfolio system, not a distributable skill (hardcoded paths, Telegram auto-exec, launchd auto-execution). Stays watchlist until it ships as an installable skill without auto-exec
+- Alpha Skills (mphinance/alpha-skills): backtesting and edge research, 33 stars, edge claims unverified. New order-lifecycle-safety skill and a skill-warden linter are a good safety angle, still thin
+- Oddly (KorroAi/oddly): SEC odd-lot tender offer scanner with backtest. 154 stars, AGPL, quiet since Oct 10
+- claude-finance-skills (andreworia/claude-finance-skills): IB/PE valuation skills, but 1 covers the same jobs officially. 27 stars, 72 days quiet, drifting stale
+- Excel Analyst Pro (jeremylongshore/excel-analyst-pro-skill-md): DCF and modeling toolkit, overlaps 1, license not standardized, quiet since Oct 14
 
 ## Left out on purpose
 
