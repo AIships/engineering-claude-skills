@@ -8,6 +8,23 @@ The only things that skip the archive are trash: dead repos with no README, brok
 
 | Date evaluated | Skill | Verdict | Reason |
 |---|---|---|---|
+| 2026-11-21 | Context Mode (mksglu/context-mode) | Watchlist | MCP server plus hooks that shrink tool output. 34,357 stars, v2.2.1 Nov 17. yoDEV test Nov 19 cut a 174 KB log to 6.5 KB with all three failures kept, but measured plumbing only, no live model session. Author 98 percent counts bytes not tokens, scripts hand-written for seen files. Elastic 2.0 license, Gateway routes requests through vendor server. Install path verified Nov 21. Closest challenger to 19, stays watchlist |
+| 2026-11-21 | Claude-BugHunter (elementalsouls/Claude-BugHunter) | Watchlist | 83 bug-hunting skills from 681 HackerOne reports, 15,553 stars, up 9,300 in a week, number one trending Nov 18. Evidence thin: self-reported red-team experience, no measured outcomes. Offense framing awkward in a general list |
+| 2026-11-21 | spec-kit (github/spec-kit) | Watchlist | GitHub official spec-driven toolkit, 150,916 stars, active Nov 20. No independent outcome evidence, duplicates workflow jobs in 1, 3, 5, and 6 |
+| 2026-11-21 | cloudflare/security-audit-skill | Watchlist | Six-phase security audit from Cloudflare's internal harness, 76,573 stars. Last commit Sep 14, 68 days ago, quiet 8 weeks. Overlaps 4 and 1 |
+| 2026-11-21 | ponytail (DietrichGebert/ponytail) | Watchlist | One skill: write less code. 196,168 stars, last commit Oct 29. Author claims only (minus 53 percent code, minus 41 percent time), no independent replication |
+| 2026-11-21 | emilkowalski/skills | Watchlist | Design-engineering skills, 58,599 stars, active Nov 15. Overlaps 13 and 14, no outcome evidence |
+| 2026-11-21 | taste-skill (Leonxlnx/taste-skill) | Rejected | Recheck: last commit Nov 7, 119k stars. Dropped Oct 31 after ranking last in a blind test, no new evidence, overlaps 13 and 14 |
+| 2026-11-21 | Karpathy Skills (multica-ai/andrej-karpathy-skills) | Rejected | Recheck: still stale, last commit Apr 20, 2026. Fails the 90-day rule |
+| 2026-11-21 | wshobson/agents | Rejected | 42,768 stars, active Nov 21, but a catalog of plugins, not a skill |
+| 2026-11-21 | rtk-ai/rtk | Rejected | 87,384 stars, active Nov 21. CLI output proxy, tool first not a skill, and published benchmark discussion warns optimizers can silently drop failing output |
+| 2026-11-21 | react-best-practices (vercel-labs/agent-skills) | Watchlist | Recheck: last commit Nov 20, still no benchmarks. Stays on watchlist |
+| 2026-11-21 | Hallmark (Nutlope/hallmark) | Watchlist | Recheck: 58,944 stars, up 4,100 in a week, still no head-to-head vs 13 and 14. Stays on watchlist |
+| 2026-11-21 | GitNexus (abhigyanpatwari/GitNexus) | Watchlist | Recheck: very active, last commit Nov 21, still no head-to-head vs 15. Stays on watchlist |
+| 2026-11-21 | open-gsd/gsd-core | Watchlist | Recheck: active Nov 21, still no published evals vs 4 and 5. Stays on watchlist |
+| 2026-11-21 | Graphify (Graphify-Labs/graphify) | Watchlist | Recheck: active Nov 20, known result stands (12 percent reading cut, no accuracy gain). Stays on watchlist |
+| 2026-11-21 | Unslop (heydamir/unslop) | Watchlist | Recheck: active Nov 15, still no comparative evaluation vs 13 and 14. Stays on watchlist |
+| 2026-11-21 | MCode Stack (MiniMax-AI/mcode-stack) | Watchlist | Recheck: 740 stars, active Nov 11, still no published evals. Stays on watchlist, weakest of the group |
 | 2026-11-14 | Backendskills (globalmpc/backendskills) | In | Took slot 20 from ECC. Author-run 150-run stress test, critical mistakes 25 to 2, raw runs published, MIT, install verified Nov 14. Effect concentrated in 2 of 15 tasks, costs about 2x per run, no independent replication yet |
 | 2026-11-14 | Graphify (Graphify-Labs/graphify) | Watchlist | Codebase knowledge graph with a /graphify skill, alternative to 15. Nov 2026 head-to-head: cut reading about 12 percent, did not improve answer accuracy. No accuracy gain, stays watchlist |
 | 2026-11-14 | MCode Stack (MiniMax-AI/mcode-stack) | Watchlist | Recheck: active Nov 10-11, new youfang stack. Still no published evals. Stays on watchlist |
