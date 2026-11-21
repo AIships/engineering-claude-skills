@@ -2,8 +2,8 @@
 
 A weekly curated list. Software engineering only, no fluff.
 
-Last updated: 2026-11-14 (v3, one swap)
-Next curation: Saturday 2026-11-21, around 9am PT
+Last updated: 2026-11-21 (v3, no swaps)
+Next curation: Saturday 2026-11-28, around 9am PT
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
 Browse it as a simple site: https://aiships.github.io/engineering-claude-skills/
@@ -83,7 +83,9 @@ Honest caveat: an independent Nov 2026 test on a 72,000-line codebase found code
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
 | 19 | Caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Cuts output tokens hard while keeping technical accuracy | You are hitting usage limits and want shorter output |
-| 20 | Backendskills | [globalmpc/backendskills](https://github.com/globalmpc/backendskills), 58 stars, created Nov 5, checked Nov 14 on GitHub | Three skills (api-endpoint, data-integrity, db-migration) that force caller-scoped queries, locks and idempotency keys, and expand-then-contract migrations | Your agent writes backend code that passes the demo and breaks in production: auth holes, money bugs, bad migrations |
+| 20 | Backendskills | [globalmpc/backendskills](https://github.com/globalmpc/backendskills), 61 stars, created Nov 5, checked Nov 21 on GitHub | Three skills (api-endpoint, data-integrity, db-migration) that force caller-scoped queries, locks and idempotency keys, and expand-then-contract migrations | Your agent writes backend code that passes the demo and breaks in production: auth holes, money bugs, bad migrations |
+
+Honest caveat: Caveman's author corrected the README Nov 17, dropping the 76 percent working-day claim (3 sessions, run once). Terminal-Bench 4 against Claude Code is level within noise; the tagline now reads 21 percent less than Codex per solved task. The claim got smaller and more honest, which is why it stays.
 
 Honest caveat: the evidence is a 150-run stress test run by the author, not an independent replication. Critical mistakes fell from 25 to 2, but 20 of the 25 came from two tasks (login rate-limiting and column renames), 10 of 15 tasks had no critical mistake either way, and runs with the skills cost about twice as much ($0.11 vs $0.06). The raw runs and rerun instructions are in the repo's bench folder, which is why it earned the slot over ECC. Install with `npx skills add globalmpc/backendskills` (test-installed Nov 14: repo clones, all three skills found).
 
@@ -93,14 +95,19 @@ Both names have many mirrors. Use the linked repos. Do not install a fork withou
 
 Did not make v3. First in line if a Top 20 slot opens:
 
-- Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13
-- react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 33,682 stars. Distinct from 10: performance, not design. No benchmarks yet, last commit still Oct 27
-- GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15
-- Context Engineering / Context Mode: token and context optimization, alternative to 19
-- open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core
+- Context Mode (mksglu/context-mode): MCP server plus hooks that shrink tool output before it reaches the context window. 34,357 stars, v2.2.1 released Nov 17. One independent test (yoDEV, Nov 19) cut a 174 KB log to 6.5 KB with all three failures kept, but it measured the plumbing only, no live model session, and no compaction test. The author's own 98 percent headline counts bytes, not tokens, and the scripts were hand-written for files already seen. License is Elastic 2.0, not open source, and the Gateway routes requests through the vendor's server and keeps session records. Closest challenger to 19. Stays watchlist until a live-session replication lands. Install path verified Nov 21: plugin manifest and marketplace file exist in the repo
+- Claude-BugHunter (elementalsouls/Claude-BugHunter): 83 skills and 15 commands for bug hunting, patterns from 681 disclosed HackerOne reports. 15,553 stars, up 9,300 in a week, number one trending Nov 18. Evidence is thin: self-reported red-team experience, no measured outcomes. Offense framing sits awkwardly in a general list
+- spec-kit (github/spec-kit): GitHub's official spec-driven development toolkit, 150,916 stars, active Nov 20. Big adoption, no independent outcome evidence, and it duplicates the workflow jobs in 1, 3, 5, and 6
+- cloudflare/security-audit-skill: six-phase security audit skill from Cloudflare's internal vuln-hunting harness, 76,573 stars. Last commit Sep 14, 68 days ago, inside the rule but quiet for 8 weeks. Overlaps 4's security role and 1's verification
+- ponytail (DietrichGebert/ponytail): one skill that makes the agent write less code. 196,168 stars, last commit Oct 29. Author claims only: minus 53 percent code, minus 41 percent time, minus 26 percent cost. No independent replication
+- emilkowalski/skills: design-engineering skills, 58,599 stars, active Nov 15. Overlaps 13 and 14, no outcome evidence
+- Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13. 58,944 stars, up 4,100 in a week, still no head-to-head vs 13 and 14
+- react-best-practices (vercel-labs/agent-skills): 40+ React and Next.js performance rules from Vercel Engineering, 34,654 stars. Distinct from 10: performance, not design. No benchmarks yet, last commit Nov 20
+- GitNexus (abhigyanpatwari/GitNexus): client-side knowledge graph with built-in RAG, alternative to 15. Very active, last commit Nov 21, still no head-to-head vs 15
+- open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core. Active Nov 21, still no published evals vs 4 and 5
 - Graphify (Graphify-Labs/graphify): codebase knowledge graph with a /graphify skill, alternative to 15. The Nov 2026 head-to-head found it cut reading about 12 percent but did not improve answer accuracy, so it stays a watchlist alternative, not a swap
-- Unslop (heydamir/unslop): staged UI review, 11,202 stars on day one. Overlaps 13 and 14, no comparative evaluation yet. Active Nov 8
-- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 545 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check. Active Nov 10-11, still no evals
+- Unslop (heydamir/unslop): staged UI review, 19,649 stars. Overlaps 13 and 14, no comparative evaluation yet. Active Nov 15
+- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 740 stars, 10 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check. Active Nov 11, still no evals
 - Pristine: UI critique skill, no verified repo yet
 - playwright-cli skill: browser QA through an npm package, overlaps 12
 
