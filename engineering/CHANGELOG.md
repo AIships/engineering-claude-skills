@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-21 - v3, no swaps
+
+- No swaps. All 20 sources rechecked: every repo had a commit Nov 12-21, no breaking changes. gstack shipped v1.102.1.0 (Nov 20), Planning with Files and UI-UX Pro Max had commits today, anthropics/skills only touched docx/pptx/xlsx/pdf Nov 14 and 16, still 19 folders, no new engineering skill. Backendskills at 61 stars, still no independent replication of the 150-run test.
+- Closest call was Context Mode (mksglu/context-mode) for slot 19. It stays on the watchlist, not a swap: the one independent test (yoDEV, Nov 19) cut a 174 KB log to 6.5 KB with all three failures kept, but it measured plumbing only, no live model session and no compaction test. The author's 98 percent headline counts bytes, not tokens, and the scripts were hand-written for seen files. License is Elastic 2.0, not open source, and the Gateway routes requests through the vendor's server and keeps session records. Install path verified Nov 21: plugin manifest and marketplace file exist in the repo.
+- Caveman stays at 19 with a new caveat in the README: the author corrected the README Nov 17, dropping the 76 percent working-day claim (3 sessions, run once). Terminal-Bench 4 against Claude Code is level within noise; the tagline now reads 21 percent less than Codex per solved task. The claim got smaller and more honest.
+- Watchlist: added Context Mode, Claude-BugHunter, spec-kit, cloudflare/security-audit-skill, ponytail, emilkowalski/skills. Rechecked Hallmark, react-best-practices, GitNexus, open-gsd, Graphify, Unslop, MCode Stack, all still waiting on evidence.
+- Candidates evaluated this week are all in archive/ARCHIVED.md: Context Mode, Claude-BugHunter, spec-kit, cloudflare/security-audit-skill, ponytail, emilkowalski/skills, taste-skill recheck, Karpathy Skills recheck, wshobson/agents, rtk-ai/rtk, plus rechecks of the seven watchlist items above.
+- The Pages site (docs/index.html) was rebuilt to match the README.
+
 ## 2026-11-14 - v3, one swap
 
 - Dropped ECC (slot 20): active and maintained, but no published outcome evidence, and its harness-tuning job is partly covered by #1 (Superpowers harness bootstrap) and #4 (gstack process roles). Replaced by globalmpc/backendskills: three backend-convention skills (api-endpoint, data-integrity, db-migration), MIT licensed, install with `npx skills add globalmpc/backendskills`. Test-installed Nov 14: the repo clones and all three skills are found. Evidence is an author-run 150-run stress test with hidden checks: critical mistakes 25 to 2 (Sonnet 5.5 13/75 to 0/75). Read the caveats in the README before trusting the headline: 20 of the 25 came from two tasks, 10 of 15 tasks had no critical mistake either way, runs cost about twice as much, and there is no independent replication yet. The raw runs and rerun instructions are in the repo, which is what earned it the slot.
